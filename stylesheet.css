@@ -1,3 +1,11 @@
 body {
     background-color: blue;
 }
+
+.container #navbar {
+    background-color: yellow;
+}
+
+#navbar a {
+    color: white;
+}
