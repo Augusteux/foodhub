@@ -3,9 +3,27 @@ body {
 }
 
 .container #navbar {
-    background-color: yellow;
+    background-color: var(--primary-color);
 }
 
 #navbar a {
     color: white;
 }
+
+:root {
+    --space-xs: 8px;
+    --space-s: 16px;
+    --space-base: 24px;
+    --space-m: 32px;
+    --space-l: 40px;
+    --space-xl: 48px;
+    --font-size-s: 0.8rem;
+    --font-size-base: 1rem;
+    --font-size-m: 1.2rem;
+    --font-size-l: 1.4rem;
+    --header-color: #f1f3f5;
+    --header-size: 56px;
+    --color-neutral: #f1f3f5;
+    --color-neutral-2: #adb5bd;
+    --primary-color: yellow;
+  }
