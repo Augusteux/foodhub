@@ -25,7 +25,7 @@ header .container {
     display: inline-block;
     background-color: var(--header-color);
     padding: var(--space-s);
-    position: sticky;
+    position: fixed;
     width: 100%;
  }
 
@@ -50,7 +50,19 @@ header .container {
     text-decoration: none;
 }
 
-
 #logo span {
     color: red;
 }
+
+
+.section {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.hero {
+    background-image: url("assets/hero1.jpg");
+    height: 50vh;
+    width: 100%;
+}
+
