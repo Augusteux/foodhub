@@ -10,6 +10,7 @@
     --font-size-m: 1.2rem;
     --font-size-l: 1.4rem;
     --font-size-xl: 2rem;
+    --font-size-xxl: 3.5rem;
     --header-color: #f1f3f5;
     --header-size: 56px;
     --color-neutral: #f1f3f5;
@@ -22,8 +23,10 @@
     margin: 0; padding: 0;
     text-decoration: none;
     border: none;
-    /* outline: auto; */
+    outline: auto;
 }
+
+/* Header and Navigation bar */
 
 .header {
     display: flex;
@@ -34,6 +37,7 @@
     width: 100%;
     z-index: 1;
     padding: 1%;
+    box-shadow: 2px 2px 10px var(--color-neutral);
     /* border-radius: 10px; */
  }
 
@@ -43,6 +47,7 @@
     justify-content: space-between;
     width: 100%;
     background-color: #1f232c;
+    
 }
 
 #navbar {
@@ -65,7 +70,9 @@
     border-radius: 10px;
 }
 
-section{
+/* Hero Section */
+
+section {
     display: flex;
 }
 
@@ -73,6 +80,7 @@ section{
     background-image: url('assets/heronowm1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 100% 25%;
     height: 90vh;
     width: 100%;
     padding: 0 10rem;
@@ -94,21 +102,21 @@ section{
 .hero-container h1, p {
     color: var(--color-neutral);
     text-align: center;
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-xxl);
     text-shadow: 5px 5px 10px black, -5px -5px 10px black;
 }
 
 .hero-container button {
     background-color: orange;
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
     text-transform: capitalize;
-    color: white;
+    color: var(--color-neutral);
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 2px 2px 10px white;
+    box-shadow: 2px 2px 10px var(--color-neutral);
     text-shadow: 2px 2px 10px black;
 }
 
 .hero-container a:visited {
-    color: white;
+    color: var(--color-neutral);
 }
