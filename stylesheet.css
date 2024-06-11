@@ -103,7 +103,8 @@ section {
     color: var(--color-neutral);
     text-align: center;
     font-size: var(--font-size-xxl);
-    text-shadow: 5px 5px 10px black, -5px -5px 10px black;
+    text-shadow: 5px 5px 10px black, -5px -5px 10px black,
+    -5px 5px 10px black, 5px -5px 10px black;
 }
 
 .hero-container button {
