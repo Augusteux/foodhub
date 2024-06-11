@@ -22,7 +22,7 @@
     margin: 0; padding: 0;
     text-decoration: none;
     border: none;
-    outline: auto;
+    /* outline: auto; */
 }
 
 .header {
@@ -34,7 +34,7 @@
     width: 100%;
     z-index: 1;
     padding: 1%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
  }
 
 .head-container {
@@ -107,4 +107,8 @@ section{
     border-radius: 1rem;
     box-shadow: 2px 2px 10px white;
     text-shadow: 2px 2px 10px black;
+}
+
+.hero-container a:visited {
+    color: white;
 }
