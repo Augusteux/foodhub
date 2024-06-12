@@ -5,6 +5,7 @@
     --space-m: 28px;
     --space-l: 36px;
     --space-xl: 44px;
+    --space-xxl: 52px;
     --font-size-s: 0.8rem;
     --font-size-base: 1rem;
     --font-size-m: 1.2rem;
@@ -19,6 +20,7 @@
     --content-max-width: 1280px;
     --secondary-color: #332f2f;
     --sidepanel-width: 250px;
+    --border-color:#cccccc;
   }
   .company-logo-container{
     align-items: center; 
@@ -36,7 +38,7 @@
     background-color: var(--header-color);
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color:  #cccccc;
+    border-bottom-color:  var(--border-color);
     box-shadow: var(--shadow);
   }
 
@@ -63,10 +65,19 @@
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     transition: background-color 0.5s;
+    color: white;
+    cursor: default;
+    text-decoration: none;
   }
-  .side-panel .item:hover{
+  .side-panel .item:hover,.side-panel .item.active{
     background-color: white;
     color: var(--secondary-color);
+  }
+  .side-panel .item:hover{
+    cursor: pointer;
+  }
+  .side-panel .item.active:hover{
+    cursor: default;
   }
   .side-panel .item .item-logo,.side-panel .item .item-text{
     display: flex;
@@ -83,3 +94,56 @@
     flex: 1;
     min-width: 300px;
   }
+  .main-content{
+    padding:var(--space-xl);
+    display: flex;
+  }
+/* tabs */
+.tabs{
+  margin-left: auto;
+  margin-right: auto;
+}
+.tabs-header{
+
+  display: inline-flex;
+
+}
+.tabs-header .item{
+  padding: var(--space-xs) var(--space-s);
+  margin-left: var(--space-m);
+}
+.tabs-header .item:first-child{
+  margin-left: unset;
+}
+.tabs-header .item.active,.tabs-header .item.active:hover{
+  border-bottom-color: var(--primary-color);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  cursor: default;
+}
+.tabs-header .item:hover{
+  cursor: pointer;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--secondary-color);
+}
+.tabs-content{
+  border-color: var(--border-color);
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-top: -1px;
+}
+
+
+/* table */
+.table{
+  margin-top: var(--space-s);
+}
+.table .table-head{
+  padding: var(--space-xs) var(--space-m);
+  text-align: left;
+}
+.table .table-data{
+  padding: var(--space-xs) var(--space-m);
+  text-align: left;
+}
