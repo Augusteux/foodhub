@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./productstyle.css">
     <script src="https://kit.fontawesome.com/a3121204a3.js" crossorigin="anonymous"></script>
 </head>
 
@@ -43,7 +44,7 @@
         <header></header>
         <div class="main-content">
             <div class="action-container">
-                <a href=""><i class="fa-solid fa-plus"></i> Add Product</a>
+                <a id="new-product" class="font-primary"><i class="fa-solid fa-plus"></i> Add Product</a>
             </div>
             <div class="tabs">
                 <div class="tabs-header">
@@ -57,7 +58,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th class="table-head">Product Name</th>
+                                <th class="table-head ">Product Name</th>
                                 <th class="table-head">Description</th>
                                 <th class="table-head">Category</th>
                                 <th class="table-head">Is Available</th>
@@ -67,13 +68,14 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="table-data"><a href="">Yumburger</a></td>
+                                <td class="table-data" ><a href="" class="font-primary">Yumburger</a></td>
                                 <td class="table-data">hamburger without cheese and veggies</td>
                                 <td class="table-data">Burgers</td>
                                 <td class="table-data">True</td>
                                 <td class="table-data">True</td>
                                 <td class="table-data">67</td>
-                                <td class="table-data"><a href=""><i class="fa-solid fa-trash-can font-color-red"></i></a></td>
+                                <td class="table-data"><a href=""><i
+                                            class="fa-solid fa-trash-can font-color-red"></i></a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -83,11 +85,21 @@
         </div>
         <div class="overlay">
             <div class="overlay-content">
-                
+                <div class="overlay-header">
+                    <a id="close-overlay"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="margin-m">
+                    <div></div>
+                    <div class="addproduct-btn-container">
+                        <button class="btn">Cancel</button>
+                        <button class="primary-btn">Save</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-
+    <script src="./product.js"></script>
 </body>
 
 </html>

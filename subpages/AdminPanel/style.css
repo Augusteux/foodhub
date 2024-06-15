@@ -17,6 +17,7 @@
     --test-color:#adb5bd74;
     --color-neutral-2: #adb5bd;
     --primary-color: #C18366;
+    --primary-color-darker: #ae785e;
     --shadow: 0 15px 20px -3px rgba(0,0,0,0.3);
     --content-max-width: 1280px;
     --secondary-color: #332f2f;
@@ -127,6 +128,10 @@
     margin-left: auto;
     background-color: white;
   }
+  .overlay-header{
+    text-align: right;
+    margin: var(--space-s);
+  }
 /* tabs */
 .tabs{
   margin-left: auto;
@@ -176,19 +181,55 @@
   padding: var(--space-xs) var(--space-m);
   text-align: left;
 }
-
+/* button */
+.primary-btn,.primary-btn.btn{
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 42px;
+  color: white;
+  cursor: pointer;
+}
+.primary-btn:active,.btn.primary-btn:active{
+  background-color: var(--primary-color-darker);
+}
+.btn{
+  background-color: white;
+  border-color: var(--primary-color);
+  border-style: solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 42px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.btn:active{
+  background-color: rgb(226, 226, 226);
+}
 .font-color-red{
   color: var(--color-red);
 }
-a:any-link{
-  color: var(--primary-color);
+a{
   text-decoration: none;
 }
-a:any-link:hover{
+a:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .action-container{
   text-align: right;
 }
 
+.font-primary,a.font-primary{
+  color: var(--primary-color);
+}
+.text-align-right{
+  text-align: right;
+}
+.margin-m{
+  margin: var(--space-m);
+}
