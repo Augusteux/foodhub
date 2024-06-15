@@ -1,3 +1,20 @@
-.addproduct-btn-container{
+.addproduct-btn-container {
     margin: var(--space-s);
+    display: flex;
+    gap: 10px;
+}
+
+.addproduct-btn-container .btn,
+.addproduct-btn-container .primary-btn {
+    flex: 1;
+}
+
+.product-title {
+    font-size: var(--font-size-m);
+    text-align: left;
+    margin-bottom: var(--space-m);
+}
+
+.form .data-container label {
+    text-align: left;
 }
