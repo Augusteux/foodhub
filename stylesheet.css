@@ -24,12 +24,17 @@
     margin: 0; padding: 0;
     text-decoration: none;
     border: none;
-    outline: auto;
+    /* outline: auto; */
+    transition: .2s;
 }
  
 html {
     margin-left: var(--space-xxl);
-    margin-right: var(--space-xxl);
+    margin-right: var(--space-xxl);  
+}
+
+body {
+    background-color: #c0c5cf;
 }
 
 /* Header and Navigation bar */
@@ -132,39 +137,76 @@ section {
     text-shadow: 1px 1px 5px black;
 }
 
+.hero-container button:hover {
+    background-color: white;
+}
+
 .hero-order-btn {
     color: rgb(255, 255, 255);
+}
+
+.hero-order-btn:hover {
+    color: black;
 }
 
 .hero-order-btn a:visited {
     color: rgb(255, 255, 255);
 }
 
+
+
 /* products section */
 
-section#products{
+#products{
     margin-top: var(--space-s);
     margin-bottom: var(--space-s);
     display: flex;
     flex-direction: column;
+
     gap: var(--space-s);
     justify-content: center;
     align-items: center;
     text-align: var(--space-s);
+    background-color: grey;
+    
+    min-height: 20svh;
 }
 
 #products h2 {
     align-self: flex-start;
+    margin-left: var(--space-s);
+    margin-top: var(--space-xs)
 }
 
 .items-container {
     display: flex;
-    gap: var(--space-m);
-    max-width: 50rem;
+    gap: var(--space-xxl);
+    max-width: 100%;
     overflow-x: scroll;
     scrollbar-width: none;
+    background-color: rgb(22, 22, 68);
+    margin-bottom: var(--space-m);
 }
 
 .items-container a {
     border-radius: 50%;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+.items-container a:hover {
+    scale: 1.1;
+}
+
+.items-container img {
+    width: 12rem;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+/* Best seller items section */
+
+#best-sellers {
+    min-height: 70svh;
+    background-color: white;
 }
