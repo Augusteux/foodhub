@@ -26,7 +26,6 @@
     box-sizing: border-box;
     margin: 0; padding: 0;
     text-decoration: none;
-    border: none;
     /* outline: auto; */
     transition: .2s;
     text-transform: capitalize;
@@ -191,6 +190,7 @@ a.hero-order-btn {
     overflow-x: scroll;
     scrollbar-width: none;
     background-color: var(--secondary-color);
+    border: 0.5rem groove var(--accent-color);
 
     align-self: center;
 }
@@ -198,7 +198,7 @@ a.hero-order-btn {
 .category-container a {
     border-radius: 50%;
     justify-content: center;
-    padding: 0.3rem;
+    padding: 1rem;
 }
 
 .category-container a:hover {
@@ -206,7 +206,7 @@ a.hero-order-btn {
 }
 
 .category-container img {
-    width: 12rem;
+    width: 10rem;
     border-radius: 50%;
     border: 3px solid rgb(0, 0, 0);
 }
@@ -234,7 +234,7 @@ a.hero-order-btn {
 .item {
     display: grid;
     grid-template-columns: 1fr .5fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr .5fr;
     width: 300px;
     height: 400px;
     background-color: var(--secondary-color);
@@ -251,40 +251,39 @@ a.hero-order-btn {
 
 .item ul {
     list-style: none;
-    line-height: 2rem;
-    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .item-button {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-around;
     padding: 0.5rem;
-    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .item .name {
     font-size: 1.3rem;
     text-align: center;
+    line-height: 2.5rem;
 }
 
 .item .description {
     font-size: 1rem;
-    padding: 0 0.3rem;
+    padding-left: 0.5rem;
+    line-height: 1.2rem;
 }
 
 .item .price {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    border-top: 1px solid black;
-    width: 100%;
 }
 
 #add-btn {
     background-color: var(--accent-color);
-    width: 100px;
-    align-self: center;
+    width: 5rem;
+    height: 3rem;
 }
 
 .item {
@@ -318,3 +317,6 @@ footer ul {
     padding: 0.5rem
 }
 
+footer a, h3, i {
+    color: var(--primary-color);
+}
