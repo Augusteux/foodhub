@@ -26,7 +26,7 @@
     box-sizing: border-box;
     margin: 0; padding: 0;
     text-decoration: none;
-    outline: auto;
+    /* outline: auto; */
     transition: .2s;
     text-transform: capitalize;
     color: var(--text-color);
@@ -41,8 +41,6 @@ html {
 body {
     background-color: var(--primary-color);
 }
-
-
 
 /* Header and Navigation bar */
 
@@ -102,10 +100,9 @@ h2 {
     background-image: url('assets/herologo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom 45% left 10%;
+    background-position: bottom 45% left 0;
     min-height: 70vh;
     min-width: 100%;
-    justify-content: flex-start;
 } 
 
 .hero-container {
@@ -186,7 +183,8 @@ a.hero-order-btn {
     gap: var(--space-l);
     max-width: 80%;
     overflow-x: scroll;
-    scrollbar-width: none;
+    overflow-y: hidden;
+    scrollbar-width: auto;
     background-color: var(--secondary-color);
     border: 0.5rem groove var(--accent-color);
 
